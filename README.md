@@ -1,1 +1,1 @@
-# Group-G-Project
+# Density functional theory (DFT)
