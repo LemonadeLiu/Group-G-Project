@@ -49,8 +49,10 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 ## Example: DFT calculation of Graphene
 
-## Example: Strain-induced effect in band structures and DOS
+
+
+## Example: Strain-induced effect in band structures and DOS ...
 
 ## Resources
-[PySCF](https://pyscf.org/index.html)
+
 [ASE](https://wiki.fysik.dtu.dk/ase/index.html)
