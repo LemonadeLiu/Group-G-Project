@@ -14,10 +14,34 @@ Solving this equation for real systems is an extremely challenging task due to t
 HF-SCF and KS-DFT are two foundational methods in quantum chemistry and condensed matter physics with fundamentally different approximations and frameworks.
 
 ### Hartree-Fock Self-Consistent Field (HF-SCF)
-The HF-SCF method provides an approximate solution to the many-electron problem by representing the many-body wavefunction as a single Slater determinant constructed from molecular orbitals. This method simplifies the complex many-body interactions by treating the repulsion between electrons in an average sense, leading to a mean-field description of electron-electron interactions.
+The HF-SCF method provides an approximate solution to the many-electron problem by representing the ground state wavefunction as a single Slater determinant $$\Psi_0$$ constructed from molecular orbitals $$\psi_0$$
+```math
+\Psi_0 = A|\psi_1(1)\psi_2(2)...\psi_N(N)|
+```
+Then the ground state energy could be represented as
+```math
+E = \braket{\Psi_0| \hat{H} | \Psi_0}
+```
+The minimization of the total energy leads to a self-consistent equation
+
+$$\mathbf{FC} = \mathbf{SCE}$$
+
+Here C is the matrix of molecular orbital coefficients, E is a diagonal matrix of the corresponding eigenenergies, and S is the atomic orbital overlap matrix. The Fock matrix F could be defined as 
+
+$$\mathbf{F} = \mathbf{T}+\mathbf{V}+\mathbf{J}+\mathbf{K}$$
+
+where $\mathbf{T}$ is the kinetic energy matrix, $\mathbf{V}$ is the external potential, $\mathbf{J}$ is the Coulomb matrix, and $\mathbf{K}$ is the exchange matrix.
+
+HF-SCF simplifies the complex many-body interactions by treating the repulsion between electrons in an average sense, leading to a mean-field description of electron-electron interactions.
 
 ### Kohn-Sham Density Functional Theory (KS-DFT)
-KS-DFT is a more contemporary and widely used approach, based on the Hohenberg-Kohn theorems and the Kohn-Sham formalism. Unlike HF-SCF, which explicitly treats wavefunctions, KS-DFT reformulates the many-electron problem in terms of the electron density, a simpler quantity.
+KS-DFT is a more contemporary and widely used approach based on the Hohenberg-Kohn theorems and the Kohn-Sham formalism. It uses the same formulation as HF-SCF and calculates the same self-consistent equation, but replaces the Fock matrix with a different Fock potential
+
+```math
+\mathbf{F} = \mathbf{T}+\mathbf{V}+\mathbf{J}+\mathbf{E_{xc}}
+```
+
+Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximated by a density functional approximation. Based on different structures and interactions in different systems, there're lots of different density functional approximation. For example, local density approximation (LDA) depends only on the electron density $\rho$ and generalized gradient approximation (GGA) depends on both electron density $\rho$ and the density gradient $|\nabla\rho|$.
 
 ## Installation
 
