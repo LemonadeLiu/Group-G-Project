@@ -51,7 +51,8 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 To calculate the ground state energy and electronic and optical properties, the following steps could be adopted.
 
-### Step 1: Define the graphene structure using PySCF or an external package ASE
+### Step 1: Define the graphene structure 
+We could use PySCF or an external package ASE to generate a graphene lattice and convert it to a PySCF cell
 ```
 import pyscf.pbc.tools.pyscf_ase as pyscf_ase
 from ase.build import graphene
@@ -59,8 +60,52 @@ from ase.build import graphene
 a = 2.46  # Lattice constant in Å
 graphene_cell = graphene(formula="C2", a=a, size=(1, 1, 1), vacuum=10)
 print("Graphene volume:", graphene_cell.get_volume())
+
+# Step 2: Convert to PySCF Cell
+cell = pbcgto.Cell()
+cell.atom = pyscf_ase.ase_atoms_to_pyscf(graphene_cell)
+cell.a = graphene_cell.cell  # Lattice vectors
+cell.basis = 'gth-szv'
+cell.pseudo = 'gth-pade'
+cell.verbose = 5
+cell.build(None, None)
+
+# Visualize the material structure
+view(cell)
+return pyscf_cell
 ```
 The graphene cell would be output
+
+![Graphene structure](./figures/graphene_structure.png)
+
+### Step 2: Set the ideal basis set and pseudopotential
+We then need to set the basis set and the pseudopotential for the system, or use the interactive widget to tune these parameters interactively. Details see './code/Graphene_interactive_interface.ipynb'
+
+![Interactive interface](./figures/interactive.png)
+
+### Step 3: Perform SCF and band structure calculation
+
+```
+import pyscf.pbc.dft as pbcdft
+
+mf = pbcdft.RKS(cell)
+mf.xc = xc
+energy = mf.kernel()
+print(f"Total Energy: {energy:.6f} ")
+```
+This would give the ground state energy, and then we could define the k-space and calculate the band structure.
+
+<img src="./figures/LDA_band.png" alt="Band structure calculated with LDA" width="300">
+
+### Step 4: Calculate the Absorption spectrum
+
+With the given ground states and ground state energy, we could then obtain the absorption spectrum of the system by summing over all possible transition energy at all k points.
+
+![Calculated absorption spectrum](./figures/Absorption.png)
+![Absorption spectrum in reference](./figures/Absorption_litera.png)
+
+We can see the calculated absorption spectrum only partially captures graphene's real absorption spectrum. This could come from the fact that actual absorption comes with an external field interacting with graphene and the system moves to an excited state. It might require using time-dependent DFT to capture all the features.
+
 ## Example: Strain-induced effect in band structures and DOS ...
 
 ## Resources
