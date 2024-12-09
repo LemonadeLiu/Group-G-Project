@@ -116,25 +116,31 @@ Studying strained graphene is crucial because strain alters its electronic, mech
    
 This research advances fundamental physics and innovative applications in technology.
 
-Below is an experimental example of nanostructure-induced strained graphene in which the optical signal changes. Inserted pictures show the lattice get stretched along one direction.
+### Experimental Example: Nanostructure-Induced Strained Graphene
 
-pic
+An experimental setup demonstrates how strain, induced by nanostructures, affects graphene’s optical signals. The accompanying images show graphene's lattice stretched along one direction, with noticeable changes in its structure and properties.
 
-In fact, when graphene is stretched in one direction, it contracts in the perpendicular direction, causing further shifts in the Fermi points, especially energy cone leaves previous K point in the k space. The relative strain in the perpendicular direction according to the Poisson’s ratio of graphene. 
+When graphene is stretched in one direction, it contracts in the perpendicular direction due to its Poisson’s ratio. This deformation shifts the Fermi points and causes the energy cone to move away from the original K point in momentum space.
 
-pic
+### Simplifying the Problem
 
-To simplify the problem, we can firstly separate the deformation into two directions, and only focus on one direction when doing DFT. The graphene lattice has the Zigzag and Armchair axis which are perpendicular to each other. For a total calculation, one can always combine the deformation from two directions based on their real strain directions.
-To ensure we are doing mostly right, we firstly compare the DFT and DOS(density of states) of normal monolayer graphene, and found that they match at around K point, which should be enough for our next trying.
+To analyze the effects of strain, deformation is simplified into two perpendicular directions, Zigzag and Armchair. For a clearer focus, calculations are performed for one direction at a time using Density Functional Theory (DFT). The results for normal monolayer graphene, including its Density of States (DOS), match well at the K point, ensuring reliability for subsequent strained calculations.
 
-In this case, we focus on the Armchair axis. By adding a strain of 1%-5%, the lattice gets stretched by 1%-5%. From where we define the graphene lattice, we can multiply the ratio to the original lattice of the ase package. You will be able to visualize the lattice change in the code.
+### Strain Along the Armchair Axis
 
-pic
+By applying 1%-5% strain along the Armchair axis, the graphene lattice stretches proportionally. The strain is incorporated into the graphene lattice parameters using the ASE package. This process enables visualization of the lattice changes.
 
-From previous papers we expect a band gap opening at the K point. By applying the lattice to the DFT code, we can tell the conduction band, and the valence band no longer meets at the previous K point. And with the increasing strain, the gap increases at the same time. Note that due to the slow speed of DFT, to make such gif, we recommend run for each case and save the results.
-Keep adding enlarged strain to the system and extract the band gap at K, a linear dependency is found, which matches with the previous paper.
+### Bandgap Opening
 
-pic
+As strain increases, a bandgap opens at the K point, with the conduction and valence bands no longer meeting at their original positions. The gap size increases linearly with strain, consistent with previous research findings.
+
+### Key Observations
+
+Strain-induced bandgap opening: A linear dependency is observed between strain magnitude and the bandgap size.
+Visualization and computation: Strain effects are modeled and visualized, enabling deeper insights into strained graphene's properties.
+This study demonstrates how strain engineering can effectively modify graphene’s electronic properties, paving the way for advanced applications and deeper understanding of 2D material behavior.
+
+
 
 
 
