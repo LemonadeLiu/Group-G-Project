@@ -120,7 +120,7 @@ This research advances fundamental physics and innovative applications in techno
 
 An experimental setup demonstrates how strain, induced by nanostructures, affects graphene’s optical signals. The accompanying images show graphene's lattice stretched along one direction, with noticeable changes in its structure and properties.
 
-![Strained graphene example](./figures/experiment_example.jpg)
+<img src="./figures/experiment_example.jpg" alt="Strained graphene example" width="300">
 
 When graphene is stretched in one direction, it contracts in the perpendicular direction due to its Poisson’s ratio. This deformation shifts the Fermi points and causes the energy cone to move away from the original K point in momentum space.
 
