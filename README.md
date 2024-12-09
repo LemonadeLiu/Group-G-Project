@@ -128,7 +128,7 @@ When graphene is stretched in one direction, it contracts in the perpendicular d
 
 To analyze the effects of strain, deformation is simplified into two perpendicular directions, Zigzag and Armchair. For a clearer focus, calculations are performed for one direction at a time using Density Functional Theory (DFT). The results for normal monolayer graphene, including its Density of States (DOS), match well at the K point, ensuring reliability for subsequent strained calculations.
 
-![Result comparison](./figures/DOS_compare.jpg)
+<img src="./figures/DOS_compare.jpg" alt="Strained graphene example" width="500">
 
 ### Strain Along the Armchair Axis
 
@@ -148,8 +148,7 @@ Strain-induced bandgap opening: A linear dependency is observed between strain m
 Visualization and computation: Strain effects are modeled and visualized, enabling deeper insights into strained graphene's properties.
 This study demonstrates how strain engineering can effectively modify graphene’s electronic properties, paving the way for advanced applications and deeper understanding of 2D material behavior.
 
-![Strain dependent Band Gap](./figures/linear_compare.jpg)
-
+<img src="./figures/linear_compare.jpg" alt="Strained graphene example" width="500">
 
 
 
