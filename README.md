@@ -134,13 +134,13 @@ To analyze the effects of strain, deformation is simplified into two perpendicul
 
 By applying 1%-5% strain along the Armchair axis, the graphene lattice stretches proportionally. The strain is incorporated into the graphene lattice parameters using the ASE package. This process enables visualization of the lattice changes.
 
-![Strained Graphene lattice](./figures/lattice.gif)
+<img src="./figures/lattice.gif" alt="Strained graphene example" width="300">
 
 ### Bandgap Opening
 
 As strain increases, a bandgap opens at the K point, with the conduction and valence bands no longer meeting at their original positions. The gap size increases linearly with strain, consistent with previous research findings.
 
-![Strained Band structure](./figures/band.gif)
+<img src="./figures/band.gif" alt="Strained graphene example" width="300">
 
 ### Key Observations
 
