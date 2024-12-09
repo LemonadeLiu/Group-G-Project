@@ -128,15 +128,19 @@ When graphene is stretched in one direction, it contracts in the perpendicular d
 
 To analyze the effects of strain, deformation is simplified into two perpendicular directions, Zigzag and Armchair. For a clearer focus, calculations are performed for one direction at a time using Density Functional Theory (DFT). The results for normal monolayer graphene, including its Density of States (DOS), match well at the K point, ensuring reliability for subsequent strained calculations.
 
-![Result comparison](./figures/DOS.jpg)
+![Result comparison](./figures/DOS_compare.jpg)
 
 ### Strain Along the Armchair Axis
 
 By applying 1%-5% strain along the Armchair axis, the graphene lattice stretches proportionally. The strain is incorporated into the graphene lattice parameters using the ASE package. This process enables visualization of the lattice changes.
 
+![Strained Graphene lattice](./figures/lattice.gif)
+
 ### Bandgap Opening
 
 As strain increases, a bandgap opens at the K point, with the conduction and valence bands no longer meeting at their original positions. The gap size increases linearly with strain, consistent with previous research findings.
+
+![Strained Band structure](./figures/band.gif)
 
 ### Key Observations
 
