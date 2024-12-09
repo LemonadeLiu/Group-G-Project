@@ -51,6 +51,16 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 To calculate the ground state energy and electronic and optical properties, the following steps could be adopted.
 
+### Step 1: Define the graphene structure using PySCF or an external package ASE
+```
+import pyscf.pbc.tools.pyscf_ase as pyscf_ase
+from ase.build import graphene
+
+a = 2.46  # Lattice constant in Å
+graphene_cell = graphene(formula="C2", a=a, size=(1, 1, 1), vacuum=10)
+print("Graphene volume:", graphene_cell.get_volume())
+```
+The graphene cell would be output
 ## Example: Strain-induced effect in band structures and DOS ...
 
 ## Resources
