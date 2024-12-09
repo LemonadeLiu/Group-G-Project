@@ -41,7 +41,7 @@ KS-DFT is a more contemporary and widely used approach based on the Hohenberg-Ko
 \mathbf{F} = \mathbf{T}+\mathbf{V}+\mathbf{J}+\mathbf{E_{xc}}
 ```
 
-Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximated by a density functional approximation. Based on different structures and interactions in different systems, there're lots of different density functional approximation. For example, local density approximation (LDA) depends only on the electron density $\rho$ and generalized gradient approximation (GGA) depends on both electron density $\rho$ and the density gradient $|\nabla\rho|$.
+Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximated by a density functional approximation, based on different structures and interactions in different systems, there are many different density functional approximations. For example, local density approximation (LDA) depends only on the electron density $\rho$, and generalized gradient approximation (GGA) depends on both electron density $\rho$ and the density gradient $|\nabla\rho|$.
 
 ## Installation
 
@@ -49,10 +49,11 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 ## Example: DFT calculation of Graphene
 
-
+To calculate the ground state energy and electronic and optical properties, the following steps could be adopted.
 
 ## Example: Strain-induced effect in band structures and DOS ...
 
 ## Resources
 
+[PySCF](https://pyscf.org/index.html)
 [ASE](https://wiki.fysik.dtu.dk/ase/index.html)
