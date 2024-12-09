@@ -132,7 +132,7 @@ To analyze the effects of strain, deformation is simplified into two perpendicul
 
 ### Strain Along the Armchair Axis
 
-By applying 1%-5% strain along the Armchair axis, the graphene lattice stretches proportionally. The strain is incorporated into the graphene lattice parameters using the ASE package. This process enables visualization of the lattice changes.
+By applying 0.5%-3.5% strain along the Armchair axis, the graphene lattice stretches proportionally. The strain is incorporated into the graphene lattice parameters using the ASE package. This process enables visualization of the lattice changes.
 
 <img src="./figures/lattice.gif" alt="Strained graphene example" width="300">
 
