@@ -55,5 +55,4 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 ## Resources
 
-[PySCF](https://pyscf.org/user/dft.html)
 [ASE](https://wiki.fysik.dtu.dk/ase/index.html)
