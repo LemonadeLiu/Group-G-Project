@@ -45,7 +45,7 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 ## Installation
 Note that ```Pyscf``` package does not support native windows system. So all of our installation instructions are for linux system. 
-We recommand using ```conda``` to manage the enviroment. To use the graphene example, you can create a environment using ```Pyscf_Graphene.yml``` file.
+We recommand using ```conda``` to manage the enviroment. To use the graphene example, you can create a environment using [```Pyscf_Graphene.yml```](./Pyscf_Graphene.yml) file.
 ## Example: Raman spectroscopy for Glycine
 Raman spectroscopy is a common technique used in chemistry and biology to study chemical composition of the sample. Due to the fact of low background to noise ratio in the real life experiment, getting good quality Raman spectrum requires careful set up. Thus, simulating the Raman spectrum for biological molecule could be useful for calibrating experimental apparatus and cross check experimental result etc.
 
