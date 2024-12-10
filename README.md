@@ -49,7 +49,7 @@ We recommand using ```conda``` to manage the enviroment. To use the graphene exa
 ```
 conda create -f Pyscf_Graphene.yml
 ```
-To use the Raman example, use the file [```Pyscf_Raman.yml```](.\Pyscf_Raman.yml)
+To use the Raman example, use the file [```Pyscf_Raman.yml```](./Pyscf_Raman.yml)
 ```
 conda create -f Pyscf_Raman.yml
 ```
