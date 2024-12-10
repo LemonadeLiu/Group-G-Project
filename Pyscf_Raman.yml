@@ -176,4 +176,3 @@ dependencies:
       - pyscf-properties==0.1.0
       - pyscfad==0.1.6
       - pyscfadlib==0.1.6
-prefix: /home/bubbleinternal/miniconda3/envs/EnvForPyscf
