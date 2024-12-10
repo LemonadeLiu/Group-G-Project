@@ -69,7 +69,7 @@ Here are some examples of the results: H2O and Glycine conformer
 <img src="./figures/Glycine.png" alt="Glycine conformer Equilibrium Strucuture" width="300"> <img src="./figures/glycine_spectrum.png" alt="Glycine Spectrum" width="500">
 
 
-More detailed explaination and derivation can be found in the [Raman.ipynb](./codes/Raman.ipynb)
+More detailed explaination and derivation can be found in the [Raman.ipynb](codes/Raman.ipynb)
 ## Example: DFT calculation of Graphene
 
 To calculate the ground state energy and electronic and optical properties, the following steps could be adopted.
