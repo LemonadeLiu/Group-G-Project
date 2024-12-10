@@ -51,13 +51,13 @@ Raman spectroscopy is a common technique used in chemistry and biology to study 
 In order to simulate Raman spectrum, we first get the equilibrium structure from geometric optimization for the molecule. Then from there we can get the vibrational frequencies and modes from the Hessian matrix which tells you where the spectrum peaks should be. At the end, Raman intensity can be derived from looking at the change in the polarizability respect to the vibrational modes.
 Here are some examples of the results: H2O and Glycine conformer
 
-<img src="./figures/H20.png" alt="H2O Equilibrium Strucuture" width="300">
+<img src="./figures/H20.png" alt="H2O Equilibrium Strucuture" width="300"> <img src="./figures/H2O_Spectrum.png" alt="H2O Spectrum" width="500">
 
-<img src="./figures/H2O_Spectrum.png" alt="H2O Spectrum" width="500">
 
-<img src="./figures/Glycine.png" alt="Glycine conformer Equilibrium Strucuture" width="300">
 
-<img src="./figures/glycine_spectrum.png" alt="Glycine Spectrum" width="500">
+<img src="./figures/Glycine.png" alt="Glycine conformer Equilibrium Strucuture" width="300"> <img src="./figures/glycine_spectrum.png" alt="Glycine Spectrum" width="500">
+
+
 
 ## Example: DFT calculation of Graphene
 
