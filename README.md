@@ -57,7 +57,7 @@ conda create -f Pyscf_Raman.yml
 ```
 which will generate a environment **Pyscf_Raman**.
 ## Example: Raman spectroscopy for Glycine
-Raman spectroscopy is a widely used technique in chemistry and biology for studying the molecular composition and structure of samples. However, obtaining high-quality Raman spectra in real-world experiments is often challenging due to the inherently low signal-to-noise ratio and potential interference from environmental bcakground. Simulating Raman spectra for biological molecules can serve as a valuable tool for calibrating experimental setups, optimizing measurement conditions, and validating experimental results.
+Raman spectroscopy is a widely used technique in chemistry and biology for studying the molecular composition and structure of samples. However, obtaining high-quality Raman spectra in real-world experiments is often challenging due to the inherently low signal-to-noise ratio and potential interference from environmental background. Simulating Raman spectra for biological molecules can serve as a valuable tool for calibrating experimental setups, optimizing measurement conditions, and validating experimental results.
 
 In order to simulate Raman spectrum, we first get the equilibrium structure from geometric optimization for the molecule. Then from there we can get the vibrational frequencies and modes from the Hessian matrix which tells you where the spectrum peaks should be. At the end, Raman intensity can be derived from looking at the change in the polarizability respect to the vibrational modes.
 Here are some examples of the results: H2O and Glycine conformer
