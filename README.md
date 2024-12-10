@@ -53,7 +53,11 @@ Here are some examples of the results: H2O and Glycine conformer
 
 <img src="./figures/H20.png" alt="H2O Equilibrium Strucuture" width="300">
 
+<img src="./figures/H20_spectrum.png" alt="H2O Spectrum" width="300">
 
+<img src="./figures/Glycine.png" alt="Glycine conformer Equilibrium Strucuture" width="300">
+
+<img src="./figures/glycine_spectrum.png" alt="Glycine Spectrum" width="300">
 
 ## Example: DFT calculation of Graphene
 
