@@ -44,7 +44,7 @@ KS-DFT is a more contemporary and widely used approach based on the Hohenberg-Ko
 Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximated by a density functional approximation, based on different structures and interactions in different systems, there are many different density functional approximations. For example, local density approximation (LDA) depends only on the electron density $\rho$, and generalized gradient approximation (GGA) depends on both electron density $\rho$ and the density gradient $|\nabla\rho|$.
 
 ## Installation
-
+We use '''conda''' to manage our environment. Note that '''Pyscf''' package does not support native windows system. So all of our installation instructions is only tested on ubuntu. 
 ## Example: Raman spectroscopy for Glycine
 Raman spectroscopy is a common technique used in chemistry and biology to study chemical composition of the sample. Due to the fact of low background to noise ratio in the real life experiment, getting good quality Raman spectrum requires careful set up. Thus, simulating the Raman spectrum for biological molecule could be useful for calibrating experimental apparatus and cross check experimental result etc.
 
