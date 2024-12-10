@@ -45,7 +45,14 @@ Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximat
 
 ## Installation
 
-## Example: Raman for H2O...
+## Example: Raman spectroscopy for Glycine
+Raman spectroscopy is a common technique used in chemistry and biology to study chemical composition of the sample. Due to the fact of low background to noise ratio in the real life experiment, getting good quality Raman spectrum requires careful set up. Thus, simulating the Raman spectrum for biological molecule could be useful for calibrating experimental apparatus and cross check experimental result etc.
+
+In order to simulate Raman spectrum, we first get the equilibrium structure from geometric optimization for the molecule. Then from there we can get the vibrational frequencies and modes from the Hessian matrix which tells you where the spectrum peaks should be. At the end, Raman intensity can be derived from looking at the change in the polarizability respect to the vibrational modes.
+Here I showed two examples: H2O and glycine conformer
+![H2O Structure](./figures/H2O.png)
+
+
 
 ## Example: DFT calculation of Graphene
 
