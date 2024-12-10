@@ -44,7 +44,7 @@ KS-DFT is a more contemporary and widely used approach based on the Hohenberg-Ko
 Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximated by a density functional approximation, based on different structures and interactions in different systems, there are many different density functional approximations. For example, local density approximation (LDA) depends only on the electron density $\rho$, and generalized gradient approximation (GGA) depends on both electron density $\rho$ and the density gradient $|\nabla\rho|$.
 
 ## Installation
-**Note: ```Pyscf``` package does not support native windows system. So all of our installation instructions are for linux system. **
+Note: ```Pyscf``` package does not support native windows system. So all of our installation instructions are for linux system.
 
 We recommand using ```conda``` to manage the enviroment. To use the graphene example, you can create a environment using [```Pyscf_Graphene.yml```](./Pyscf_Graphene.yml) file:
 ```
