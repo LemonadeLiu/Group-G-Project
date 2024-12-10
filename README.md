@@ -44,17 +44,18 @@ KS-DFT is a more contemporary and widely used approach based on the Hohenberg-Ko
 Where $\mathbf{E_{xc}}$ is the exchange-correlation(xc) energy and is approximated by a density functional approximation, based on different structures and interactions in different systems, there are many different density functional approximations. For example, local density approximation (LDA) depends only on the electron density $\rho$, and generalized gradient approximation (GGA) depends on both electron density $\rho$ and the density gradient $|\nabla\rho|$.
 
 ## Installation
-Note that ```Pyscf``` package does not support native windows system. So all of our installation instructions are for linux system. 
+**Note: ```Pyscf``` package does not support native windows system. So all of our installation instructions are for linux system. **
+
 We recommand using ```conda``` to manage the enviroment. To use the graphene example, you can create a environment using [```Pyscf_Graphene.yml```](./Pyscf_Graphene.yml) file:
 ```
 conda create -f Pyscf_Graphene.yml
 ```
-which will automatically generate a environment called ***Pyscf_Graphene***.
+which will automatically generate a environment called **Pyscf_Graphene**.
 To use the Raman example, use the file [```Pyscf_Raman.yml```](./Pyscf_Raman.yml)
 ```
 conda create -f Pyscf_Raman.yml
 ```
-which will generate a environment ***Pyscf_Raman***.
+which will generate a environment **Pyscf_Raman**.
 ## Example: Raman spectroscopy for Glycine
 Raman spectroscopy is a common technique used in chemistry and biology to study chemical composition of the sample. Due to the fact of low background to noise ratio in the real life experiment, getting good quality Raman spectrum requires careful set up. Thus, simulating the Raman spectrum for biological molecule could be useful for calibrating experimental apparatus and cross check experimental result etc.
 
