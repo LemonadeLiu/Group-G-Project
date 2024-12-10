@@ -49,10 +49,12 @@ We recommand using ```conda``` to manage the enviroment. To use the graphene exa
 ```
 conda create -f Pyscf_Graphene.yml
 ```
+which will automatically generate a environment called ***Pyscf_Graphene***.
 To use the Raman example, use the file [```Pyscf_Raman.yml```](./Pyscf_Raman.yml)
 ```
 conda create -f Pyscf_Raman.yml
 ```
+which will generate a environment ***Pyscf_Raman***.
 ## Example: Raman spectroscopy for Glycine
 Raman spectroscopy is a common technique used in chemistry and biology to study chemical composition of the sample. Due to the fact of low background to noise ratio in the real life experiment, getting good quality Raman spectrum requires careful set up. Thus, simulating the Raman spectrum for biological molecule could be useful for calibrating experimental apparatus and cross check experimental result etc.
 
